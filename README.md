@@ -27,7 +27,7 @@ The default training parameters are defined in `options/base_options.py` and `op
 - `--lr`: base learning rate, default `1e-5`
 - `--gcn_layers`: layer numbe for GCN, default `2`
 - '--gat_layers': layer numbe for GAT, default `2`
-- `--gmf_num_prototypes`: number of shared prototypes in TRICUS, default `64
+- `--gmf_num_prototypes`: number of shared prototypes in TRICUS, default `64`
 
 ## Project structure
 
