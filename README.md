@@ -24,12 +24,10 @@ The default training parameters are defined in `options/base_options.py` and `op
 - `--name`: name of the experiment, default `TRICUS`
 - `--checkpoints_dir`: frames are saved here, default`./logger`
 - `--niter`: training epochs, default `200`
-- `--lr`: base learning rate, default `1e-4`
-- `--hidden_dim`: hidden dimension for wavelet layers, default `256`
-- `--wavelet_scales`: heat-kernel scales t_s for multi-scale wavelets, default `7.0 8.0 9.0 10.0`
-- `--cheby_order`: Chebyshev polynomial order, default `4`
-- `--kan_hidden_dim`: FourierKAN hidden dimension, default `128`
-- `--kan_n_freqs`: number of Fourier frequency pairs in KAN layers, default `2`
+- `--lr`: base learning rate, default `1e-5`
+- `--gcn_layers`: layer numbe for GCN, default `2`
+- '--gat_layers': layer numbe for GAT, default `2`
+- `--gmf_num_prototypes`: number of shared prototypes in TRICUS, default `64
 
 ## Project structure
 
@@ -73,5 +71,5 @@ The script will default to executing a 5-fold training process and save the resu
 If you need to specify a GPU or modify training parameters, you can run it like this:
 
 ```bash
-python main.py --device cuda --gpu_ids 0 --niter 200 --lr 1e-4
+python main.py --device cuda --gpu_ids 0 --niter 200 --lr 1e-5
 ```
