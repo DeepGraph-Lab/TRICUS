@@ -13,7 +13,7 @@ class BaseOptions():
                             help='scaling factor for normal, xavier and orthogonal.')
         parser.add_argument('--init_type', type=str, default='xavier',
                             help='network initialization [normal|xavier|kaiming|orthogonal]')
-        parser.add_argument('--name', type=str, default='GMF',
+        parser.add_argument('--name', type=str, default='TRICUS',
                             
                             help='name of the experiment. It decides where to store samples and frames')
         parser.add_argument('--checkpoints_dir', type=str, default='./logger', help='frames are saved here')
