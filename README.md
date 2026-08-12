@@ -3,7 +3,7 @@ The project of TRICUS
 ## TRICUS
 The framework of TRICUS is as follows:
 
-![TRICUS Architecture](TRICUS.png)
+![TRICUS Architecture](TriCuS.png)
 
 ## Environmental Dependencies and Configuration
 
